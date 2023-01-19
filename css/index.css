@@ -1,0 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+  font-family: "Open Sans";
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  margin-right: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+.navbar ul li {
+  list-style: none;
+  color: black;
+  font-weight: 400px;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+.contenedor .rowe {
+  display: flex;
+  align-items: center;
+}
+.contenedor .rowe img {
+  height: 300px;
+}
+.contenedor .rowe span {
+  font-size: 5rem;
+}
+
+.full_width {
+  background-color: #FF5E43;
+}
+.full_width p {
+  font-size: 5rem;
+}
+
+.border_1 {
+  border: solid 2px black;
+}
+
+.column {
+  width: 50%;
+}
+
+.contenedor {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f_column {
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=index.css.map */

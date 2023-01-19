@@ -1,0 +1,49 @@
+*{
+    font-family:'Open Sans';
+}
+.navbar{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    & img{}
+    & ul {
+        margin-right: 4rem;
+        display: flex;
+        gap: 3rem;
+        & li{
+            list-style: none;
+            color: black;
+            font-weight: 400px;
+            font-size: 18px;
+            display: inline-block;
+            line-height: 25px;
+        }
+    }
+}
+.contenedor {
+    & .rowe{
+        display: flex;
+        align-items: center;
+        & img{
+            height: 300px;
+        }
+        & span{
+            font-size: 5rem;
+        }
+    }    
+}
+.full_width{
+    background-color: #FF5E43;
+    & p {
+        font-size: 5rem;
+    }
+}
+.border_1{
+    border: solid 2px black;
+}
+.img_feature_1{
+    max-width: 50vw;
+}
+.column{
+    width: 50%;
+}

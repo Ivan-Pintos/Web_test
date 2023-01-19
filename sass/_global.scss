@@ -1,0 +1,14 @@
+.contenedor{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    max-width: 100vw;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.f_column{
+    flex-direction: column;
+}
