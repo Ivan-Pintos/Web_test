@@ -1,0 +1,23 @@
+.animation_a{
+    position: absolute;
+    animation: infinite alternate-reverse 2s animation_move_right linear;
+}
+.animation_a_r{
+    position: absolute;
+    animation: infinite alternate 2s animation_move_right linear;
+}
+.item_animation{
+    height: 400px;
+    width: 400px;
+}
+.container_animation{
+    overflow: hidden;
+}
+@keyframes animation_move_right {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100% ; transform:  translateX(-1200px);
+    }
+}
