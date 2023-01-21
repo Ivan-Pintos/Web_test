@@ -33,8 +33,9 @@
   max-width: 50vw;
 }
 
-.column {
-  width: 50%;
+.btn_custom {
+  background-color: #77D7DB;
+  font-size: 0.6em;
 }
 
 .animation_img {
@@ -64,8 +65,20 @@
   font-size: 2rem;
 }
 
+.text_very_small {
+  font-size: 0.7rem;
+}
+
+.size_icons {
+  font-size: 1.5rem;
+}
+
 .text_little {
   font-size: 1rem;
+}
+
+.text_mid {
+  font-size: 1.8rem;
 }
 
 .text_big {
