@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
     <title>Web Page test - Boron</title>
 </head>
 <body>
+    <div class="container_change_button">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="switch" onchange="Changeheader()">
+        </div>
+    </div>
     <header class="container">
-        <nav class="navbar">
-            <img src="resources/logo_boron.JPG" alt="Logo Boron">
-            <ul id="nav_1">
+        <nav class="navbar" id="nav_1">
+            <img src="resources/logo_boron.png" alt="Logo Boron" style="width: 200px;">
+            <ul>
                 <li class="hover_o">Acerca de</li>
                 <li class="hover_o">Proyectos</li>
                 <li class="hover_o">Repositorio</li>
@@ -23,6 +28,51 @@
                 <li class="hover_o">En/<b>Es</b></li>
                 <li class="hover_o"><i class="bi bi-search"></i></li>
             </ul>
+        </nav>
+        <nav class="d-none" id="nav_2" style="z-index: 200;">
+            <div class="container header_2 p-3" style="z-index: 200;">
+                <div class="row w-100">
+                    <div class="col-6">
+                        <img src="resources/icon_B.png" alt="Icono Boron B" style="height: 50px;">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end hover_o" onclick="desplegar()">
+                        <div class="btn_header_2 d-flex align-items-center px-3 gap-2" id="content_btn">
+                            <span>Menu</span><i class="bi bi-filter-left text_mid"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="d-none" id="nav_content">
+                <div class="nav2"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="d-flex flex-column text-white list_header_2 text_mid justify-content-end h-100">
+                                    <li class="hover_o">Acerca de</li>
+                                    <li class="hover_o">Proyectos</li>
+                                    <li class="hover_o">Repositorio</li>
+                                    <li class="hover_o">Novedades</li>
+                                    <li class="hover_o">Contacto</li>
+                                    <li class="hover_o"><i class="bi bi-search"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="d-flex flex-column text-white list_header_2 text_mid justify-content-end h-100">
+                                    <li class="hover_o">En /<b> Es</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6" style="padding-left: 10%;">
+                                <button class="btn_custom p-2 hover_o"><b class="d-flex align-items-center justify-content-center gap-2">SUSCRIBITE A NUESTRO NEWSLETER <i class="bi bi-arrow-right" style="font-size: 1.2rem;"></i></b></button>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex gap-3 justify-content-center align-content-center" style="color: #77D7DB;"><i class="bi bi-youtube text_mid"></i> <i class="bi bi-twitter text_mid"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -234,5 +284,6 @@
             </div>
         </footer>
     </main>
+    <script src="js/js.js"></script>
 </body>
 </html>

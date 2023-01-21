@@ -22,6 +22,49 @@
   line-height: 25px;
 }
 
+.list_header_2 {
+  list-style: none;
+  padding: 20%;
+  padding-bottom: 20px;
+  font-weight: 100;
+  line-height: 60px;
+}
+
+.nav2 {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 70vh;
+  background-color: black;
+  color: white;
+  z-index: 150;
+}
+
+.btn_header_2 {
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+}
+
+.header_2 {
+  position: fixed;
+  top: 20px;
+}
+
+input[type=checkbox].form-check-input {
+  position: fixed;
+  z-index: 300;
+  bottom: 50px;
+  left: 100px;
+  height: 1.5rem;
+  width: 3rem;
+}
+
+input[type=checkbox].form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+
 .full_width {
   background-color: #FF5E43;
 }
@@ -46,6 +89,10 @@
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.container_change_button {
+  position: absolute;
 }
 
 .animation_text {
