@@ -5,54 +5,193 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Web Page test - Boron</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar">
             <img src="resources/logo_boron.JPG" alt="Logo Boron">
-            <ul>
-                <li>Acerca de</li>
-                <li>Proyectos</li>
-                <li>Repositorio</li>
-                <li>Novedades</li>
-                <li>Contacto</li>
-                <li>En/<b>Es</b></li>
-                <li><i class="bi bi-search"></i></li>
+            <ul id="nav_1">
+                <li class="hover_o">Acerca de</li>
+                <li class="hover_o">Proyectos</li>
+                <li class="hover_o">Repositorio</li>
+                <li class="hover_o">Novedades</li>
+                <li class="hover_o">Contacto</li>
+                <li class="hover_o">En/<b>Es</b></li>
+                <li class="hover_o"><i class="bi bi-search"></i></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Bienvenidos</h1>
-        <p><b>Desarrollamos y promovemos investigación, innovación y divulgación sobre tecnología digital y aprendizaje, en Uruguay y América Latina</b></p>
-        <hr>
-        <div class="contenedor border_1 center f_column">
-            <div class="rowe">
-                <span>Diseño</span>
-                <img src="resources/diseno_a.jpg" alt="Imagen 2 de diseño">
-                <span>Diseño</span>
-                <img src="resources/diseno_b.jpg" alt="Imagen 2 de diseño"> 
+        <div class="container">
+            <h1>Bienvenidos</h1>
+            <p><b>Desarrollamos y promovemos investigación, innovación y divulgación sobre tecnología digital y aprendizaje, en Uruguay y América Latina</b></p>
+            <hr>
+        </div>
+        
+        <div class="container center">
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="col-4">
+                    <img src="resources/diseno_a.jpg" alt="Imagen 2 de diseño" class="animation_img">
+                </div>
+                <div class="col-4 d-flex center">
+                    <span class="animation_text ">Diseño</span>
+                </div>
+                <div class="col-4">
+                    <img src="resources/diseno_b.jpg" alt="Imagen 2 de diseño" class="animation_img"> 
+                </div>
             </div>
-            <div class="rowe">
-                <span>Tecnologia</span>
-                <img src="resources/robot.JPG" alt="Imagen tecnologia e inovacion">
-                <span>innovación</span>
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="col-4 d-flex center">
+                    <span class="animation_text">Tecnologia</span>
+                </div>
+                <div class="col-4">
+                    <img src="resources/robot.JPG" alt="Imagen tecnologia e inovacion" class="animation_img">
+                </div>
+                <div class="col-4 d-flex center">
+                    <span class="animation_text">innovación</span>
+                </div>
             </div>
-            <div class="rowe">
-                <img src="resources/uruguay_1.JPG" alt="Imagen de Uruguay">
-                <span>Uruguay</span>
-                <img src="resources/uruguay_2.JPG" alt="Imagen de Uruguay">
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="col-4">
+                    <img src="resources/uruguay_1.JPG" alt="Imagen de Uruguay" class="animation_img">
+                </div>
+                <div class="col-4 d-flex center">
+                    <span class="animation_text">Uruguay</span>
+                </div>
+                <div class="col-4">
+                    <img src="resources/uruguay_2.JPG" alt="Imagen de Uruguay" class="animation_img">
+                </div>
             </div>
         </div>
-        <div class="contendor full_width">
-            <p>Somos una organización autónoma que busca resolver desafíos relacionados con el aprendizaje y la mediación de las tecnologías, a través de metodologías innovadoras y un abordaje práctico, social y participativo.</p>
-        </div>
-        <div class="contenedor ">
-            <div class="column" style="background-color: #77D7DB;">
-                <span class="title">Nuestro Enfoque</span>
-                <p>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores  nacionales e internacionales.</p>    
+        <div class="container" >
+            <div class="row " style="background-color:#FF5E43">
+                <p>Somos una organización autónoma que busca resolver desafíos relacionados con el aprendizaje y la mediación de las tecnologías, a través de metodologías innovadoras y un abordaje práctico, social y participativo.</p>
             </div>
-            <img src="resources/woman_1.jpg" alt="Imagen Woman" class="img_feature_1">
+        </div>
+        <div class="container">
+            <div class="row" style="background-color:#77D7DB">
+                <div class="col-6">
+                    <div>
+                        <span class="title">Nuestro Enfoque</span>
+                        <p>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores  nacionales e internacionales.</p>    
+                    </div>
+                </div>
+                <div class="col-6 p-0">
+                    <img src="resources/woman_1.jpg" alt="Imagen Woman" class="img_feature_1" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row flex-row-reverse" style="background-color: #1DA1F2;">
+                <div class="col-6">
+                    <div>
+                        <span class="title">Seguinos en Twitter</span>
+                        <i class="bi bi-twitter text-white"></i>
+                        <span>Boronstudio</span>
+                        <span>@Boronstudio</span>
+                        <span>2 hs</span>
+                        <p>📌#OportunidadLaboral Llamado abierto para sumarse al equipo de @Boronstudio master digital.👩‍💻👨‍💻 Más información 👉https://bit.ly/2OobIHS</p>
+                        <i class="bi bi-arrow-left"></i>
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="col-6 p-0">
+                    <img src="resources/woman_2.png" alt="Imagen Woman" class="img_feature_1" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-9 text_big"><b>Repositorio</b></div>
+                <div class="col d-flex justify-content-end text_little">Respositorio institucional de Boron Studio</div>
+            </div>
+            <hr>
+            <div class="row text_list">
+                <div class="col p-2">Autor</div>
+                <div class="col d-flex justify-content-end align-items-center"><i class="bi bi-arrow-right"></i></div>
+            </div>
+            <hr>
+            <div class="row text_list">
+                <div class="col p-2">Título</div>
+                <div class="col d-flex justify-content-end align-items-center"><i class="bi bi-arrow-right"></i></div>
+            </div>
+            <hr>
+            <div class="row text_list">
+                <div class="col p-2">Líneas de navegación</div>
+                <div class="col d-flex justify-content-end align-items-center"><i class="bi bi-arrow-right"></i></div>
+            </div>
+            <hr>
+            <div class="row text_list">
+                <div class="col p-2">Descripciones</div>
+                <div class="col d-flex justify-content-end align-items-center"><i class="bi bi-arrow-right"></i></div>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="container">
+            <div class="row"><span class="text_very_big text-center"><b>Novedades</b></span></div>
+            <div class="row" style="height: 300px;">
+                <div class="col-3 p-3" style="background-color:  #40B5E0; z-index: 120;">
+                    <div class="row h-100 d-flex flex-column ">
+                        <div class="col " style=" min-height: 200px;">
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><b>WEBINAR</b></div>
+                                <div class="col d-flex justify-content-end"><i class="bi bi-plus icon_plus hover_o" ></i></div>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-top">
+                            <b>Boron Studio invita a webinar sobre educación híbrida</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" style="background-color: #77D7DB;">
+                    <div class="row h-100 m-0 d-flex flex-column position-relative">
+                        <div class="col p-0 " style=" min-height: 200px;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="resources/mini_img.png" alt="Imagen Boron Studio" class="w-100 trapecio" style="min-height: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="trapecio_falso">
+                        <div class="col" style="z-index: 120; margin-top: 17px;">
+                            <b>Boron Studio invita a webinar sobre educación híbrida</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-3" style="background-color: #44D19D; z-index: 120">
+                    <div class="row h-100 d-flex flex-column ">
+                        <div class="col " style=" min-height: 200px;">
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><b>EVENTO</b></div>
+                                <div class="col d-flex justify-content-end"><i class="bi bi-plus icon_plus hover_o" ></i></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <b>Boron Studio presenta experiencia de educación a distancia en México</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-3" style="background-color: #FEDA3C; z-index: 120">
+                    <div class="row h-100 d-flex flex-column ">
+                        <div class="col  " style=" min-height: 200px;">
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><b>PUBLICACIÓN</b></div>
+                                <div class="col d-flex justify-content-end"><i class="bi bi-plus icon_plus hover_o" ></i></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <b>
+                                Publicación del libro “Tecnología: Lo que puede y no puede hacer por la educación”
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
