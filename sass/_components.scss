@@ -79,17 +79,17 @@ input[type="checkbox"].form-check-input:checked{
         font-size: 5rem;
     }
 }
+.img_footer{
+    padding: 5% 0% 0% 7%;
+}
 .img_feature_1{
-    max-width: 50vw;
+    width: 100%;
 }
 .btn_custom{
     background-color: #77D7DB;
     font-size: 0.6em;
 }
-.animation_text{
-        font-size: 4rem;
-        overflow: hidden;
-}
+
 .center{
     justify-content: center;
     align-items: center;
@@ -114,56 +114,71 @@ font-size: 2rem;
     font-size: 1.5rem;
 }
 .text_little{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 .text_mid{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .text_big{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .text_very_big{
     font-size: 5rem;
 
 }
 @media (min-width: 576px) {
-    .animation_text {
+    .text_very_big{
+        font-size: 6rem;
+    }
+    .text_big{
+        font-size: 2.5rem;
+    }
+    .text_mid{
         font-size: 2rem;
     }
-    .trapecio_falso{
-        top: 15%;
+    .text_little{
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 768px) {
-    .animation_text {
-        font-size: 2rem;
+    .text_very_big{
+        font-size: 7rem;
     }
-    .trapecio_falso{
-        top: 25%;
+    .text_big{
+        font-size: 3rem;
+    }
+    .text_mid{
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 992px) {
-    .animation_text {
-        font-size: 4rem;
+    .text_very_big{
+        font-size: 8rem;
     }
-    .trapecio_falso{
-        top: 35%;
+    .text_big{
+        font-size: 3.5rem;
+    }
+    .text_mid{
+        font-size: 3rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .animation_text {
-        font-size: 5rem;
+    .text_very_big{
+        font-size: 9rem;
     }
-    .trapecio_falso{
-        top: 35%;
+    .text_big{
+        font-size: 4rem;
     }
 }
 
 @media (min-width: 1400px) {
-    .animation_text {
-        font-size: 6rem;
+    .text_very_big{
+        font-size: 10rem;
+    }
+    .text_big{
+        font-size: 4.5rem;
     }
 }
 

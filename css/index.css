@@ -1,20 +1,26 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-.animation_a {
-  position: absolute;
-  animation: infinite alternate-reverse 2s animation_move_right linear;
-}
-
 .animation_a_r {
   position: absolute;
   animation: infinite alternate 2s animation_move_right linear;
 }
 
-.item_animation {
-  height: 400px;
-  width: 400px;
+.animation_a {
+  position: absolute;
+  animation: infinite alternate-reverse 2s animation_move_right linear;
 }
 
 .container_animation {
+  overflow: hidden;
+  height: 100px;
+}
+
+.item_animation {
+  height: 100px;
+  width: 100px;
+}
+
+.animation_text {
+  font-size: 1rem;
   overflow: hidden;
 }
 
@@ -24,7 +30,49 @@
   }
   100% {
     left: 100%;
-    transform: translateX(-1200px);
+    transform: translateX(-300px);
+  }
+}
+@media (min-width: 576px) {
+  .animation_text {
+    font-size: 2rem;
+  }
+  .container_animation {
+    height: 200px;
+  }
+  .item_animation {
+    height: 200px;
+    width: 200px;
+  }
+  @keyframes animation_move_right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+      transform: translateX(-600px);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .animation_text {
+    font-size: 4rem;
+  }
+  .container_animation {
+    height: 300px;
+  }
+  .item_animation {
+    height: 300px;
+    width: 300px;
+  }
+  @keyframes animation_move_right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+      transform: translateX(-900px);
+    }
   }
 }
 @keyframes aniamtion_img_top_container {
@@ -125,18 +173,17 @@ input[type=checkbox].form-check-input:checked {
   font-size: 5rem;
 }
 
+.img_footer {
+  padding: 5% 0% 0% 7%;
+}
+
 .img_feature_1 {
-  max-width: 50vw;
+  width: 100%;
 }
 
 .btn_custom {
   background-color: #77D7DB;
   font-size: 0.6em;
-}
-
-.animation_text {
-  font-size: 4rem;
-  overflow: hidden;
 }
 
 .center {
@@ -169,15 +216,15 @@ input[type=checkbox].form-check-input:checked {
 }
 
 .text_little {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .text_mid {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .text_big {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .text_very_big {
@@ -185,40 +232,55 @@ input[type=checkbox].form-check-input:checked {
 }
 
 @media (min-width: 576px) {
-  .animation_text {
+  .text_very_big {
+    font-size: 6rem;
+  }
+  .text_big {
+    font-size: 2.5rem;
+  }
+  .text_mid {
     font-size: 2rem;
   }
-  .trapecio_falso {
-    top: 15%;
+  .text_little {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) {
-  .animation_text {
-    font-size: 2rem;
+  .text_very_big {
+    font-size: 7rem;
   }
-  .trapecio_falso {
-    top: 25%;
+  .text_big {
+    font-size: 3rem;
+  }
+  .text_mid {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) {
-  .animation_text {
-    font-size: 4rem;
+  .text_very_big {
+    font-size: 8rem;
   }
-  .trapecio_falso {
-    top: 35%;
+  .text_big {
+    font-size: 3.5rem;
+  }
+  .text_mid {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  .animation_text {
-    font-size: 5rem;
+  .text_very_big {
+    font-size: 9rem;
   }
-  .trapecio_falso {
-    top: 35%;
+  .text_big {
+    font-size: 4rem;
   }
 }
 @media (min-width: 1400px) {
-  .animation_text {
-    font-size: 6rem;
+  .text_very_big {
+    font-size: 10rem;
+  }
+  .text_big {
+    font-size: 4.5rem;
   }
 }
 .hover_o:hover {
@@ -278,22 +340,28 @@ input[type=checkbox].form-check-input:checked {
   padding-left: 1.75rem;
 }
 
-.animation_a {
-  position: absolute;
-  animation: infinite alternate-reverse 2s animation_move_right linear;
-}
-
 .animation_a_r {
   position: absolute;
   animation: infinite alternate 2s animation_move_right linear;
 }
 
-.item_animation {
-  height: 400px;
-  width: 400px;
+.animation_a {
+  position: absolute;
+  animation: infinite alternate-reverse 2s animation_move_right linear;
 }
 
 .container_animation {
+  overflow: hidden;
+  height: 100px;
+}
+
+.item_animation {
+  height: 100px;
+  width: 100px;
+}
+
+.animation_text {
+  font-size: 1rem;
   overflow: hidden;
 }
 
@@ -303,7 +371,49 @@ input[type=checkbox].form-check-input:checked {
   }
   100% {
     left: 100%;
-    transform: translateX(-1200px);
+    transform: translateX(-300px);
+  }
+}
+@media (min-width: 576px) {
+  .animation_text {
+    font-size: 2rem;
+  }
+  .container_animation {
+    height: 200px;
+  }
+  .item_animation {
+    height: 200px;
+    width: 200px;
+  }
+  @keyframes animation_move_right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+      transform: translateX(-600px);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .animation_text {
+    font-size: 4rem;
+  }
+  .container_animation {
+    height: 300px;
+  }
+  .item_animation {
+    height: 300px;
+    width: 300px;
+  }
+  @keyframes animation_move_right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+      transform: translateX(-900px);
+    }
   }
 }
 @keyframes aniamtion_img_top_container {

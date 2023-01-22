@@ -1,16 +1,21 @@
-.animation_a{
-    position: absolute;
-    animation: infinite alternate-reverse 2s animation_move_right linear;
-}
 .animation_a_r{
     position: absolute;
     animation: infinite alternate 2s animation_move_right linear;
 }
-.item_animation{
-    height: 400px;
-    width: 400px;
+.animation_a{
+    position: absolute;
+    animation: infinite alternate-reverse 2s animation_move_right linear;
 }
 .container_animation{
+    overflow: hidden;
+    height: 100px;
+}
+.item_animation{
+    height: 100px;
+    width: 100px;
+}
+.animation_text{
+    font-size: 1rem;
     overflow: hidden;
 }
 @keyframes animation_move_right {
@@ -18,10 +23,50 @@
         left: 0;
     }
     100%{
-        left: 100% ; transform:  translateX(-1200px);
+        left: 100% ; transform:  translateX(-300px);
     }
 }
 
+@media (min-width: 576px) {
+    .animation_text{
+        font-size: 2rem;
+    }
+    .container_animation{
+        height: 200px;
+    }
+    .item_animation{
+        height: 200px;
+        width: 200px;
+    }
+    @keyframes animation_move_right {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100% ; transform:  translateX(-600px);
+        }
+    }
+}
+@media (min-width: 768px) {
+    .animation_text{
+        font-size: 4rem;
+    }
+    .container_animation{
+        height: 300px;
+    }
+    .item_animation{
+        height: 300px;
+        width: 300px;
+    }
+    @keyframes animation_move_right {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100% ; transform:  translateX(-900px);
+        }
+    }
+}
 @keyframes aniamtion_img_top_container{
     0%{
         height: 0px;
