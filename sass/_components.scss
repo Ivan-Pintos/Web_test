@@ -19,6 +19,21 @@
         }
     }
 }
+.hover_circle:hover{
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+.hover_circle_inverse:hover{
+    background-color: black;
+    color: white;
+    padding-left: 0.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
 .list_header_2{
     list-style: none;
     padding: 20%;
@@ -110,20 +125,6 @@ font-size: 2rem;
     font-size: 5rem;
 
 }
-.trapecio_falso{
-    border-width: 100px;
-    transform: rotate(-12.25deg);
-    border-color: #77D7DB;
-    opacity: 100%;
-    z-index: 100;
-    margin: 0;
-    border-left: solid 200px #77D7DB;
-    border-right:solid 100px #77D7DB ;
-    border-top: solid 100px #77D7DB;
-    position: absolute;
-    top: 12%;
-    object-fit: cover;
-}
 @media (min-width: 576px) {
     .animation_text {
         font-size: 2rem;
@@ -169,4 +170,19 @@ font-size: 2rem;
     opacity: 50%;
     cursor: pointer;
     text-decoration: underline ;
+}
+.hover_img{
+    & .col-4{
+        & img{
+            display: none;
+        }
+    }
+}
+.hover_img:hover{
+    cursor: pointer;
+    & .col-4{
+        & img{
+            display: block;
+        }
+    }
 }
