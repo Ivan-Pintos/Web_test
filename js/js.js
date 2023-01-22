@@ -14,6 +14,7 @@ function desplegar(){
         truestate = false;
     }else{
         boton.innerHTML = `<span>Menu</span><i class="bi bi-filter-left text_mid"></i>`
+        truestate = true;
     }
     
 }

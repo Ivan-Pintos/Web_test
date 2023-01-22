@@ -1,3 +1,4 @@
+@import "animations";
 *{
     font-family:'Open Sans';
 }
@@ -183,6 +184,48 @@ font-size: 2rem;
     & .col-4{
         & img{
             display: block;
+        }
+    }
+}
+.hover_img_top{
+    padding: 1rem;
+    & .row {
+        & .col#img_top{
+            display: none;
+            & .container_img_top{
+                position: relative;
+                & .triangulo-rectangulo-arriba {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.hover_img_top:hover{
+    padding: 0%;
+    cursor: pointer;
+    & .row {
+        & .col#top_squere{
+            display: none;
+        }
+        & .col#img_top{
+            display: flex;
+                & .container_img_top{
+                    animation: forwards aniamtion_img_top_container 0.25s linear;
+                    & .triangulo-rectangulo-arriba {
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        width: 0;
+                        height: 0;
+                        border-left: 330px solid transparent;
+                        border-right: 0px solid transparent;
+                        border-bottom: 100px solid;
+                    }
+                }
+        }
+        & .col#text_content{
+            padding-left: 1.75rem;
         }
     }
 }
