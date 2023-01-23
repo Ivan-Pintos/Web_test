@@ -95,15 +95,12 @@
   justify-content: space-between;
 }
 .navbar ul {
-  margin-right: 4rem;
-  display: flex;
   gap: 3rem;
 }
 .navbar ul li {
   list-style: none;
   color: black;
   font-weight: 400px;
-  font-size: 18px;
   display: inline-block;
   line-height: 25px;
 }
@@ -134,11 +131,10 @@
 .nav2 {
   position: fixed;
   right: 0;
-  width: 50vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
   color: white;
-  z-index: 150;
 }
 
 .btn_header_2 {
@@ -265,6 +261,13 @@ input[type=checkbox].form-check-input:checked {
   }
   .text_mid {
     font-size: 3rem;
+  }
+  .text_very_small {
+    font-size: 1rem;
+  }
+  .nav2 {
+    width: 50vw;
+    height: 80vh;
   }
 }
 @media (min-width: 1200px) {

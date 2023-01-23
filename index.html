@@ -11,43 +11,47 @@
     <title>Web Page test - Boron</title>
 </head>
 <body>
-    <div class="container_change_button">
+    <div class="container_change_button d-none d-lg-flex">
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="switch" onchange="Changeheader()">
         </div>
     </div>
-    <header class="container">
-        <nav class="navbar" id="nav_1">
-            <img src="resources/logo_boron.png" alt="Logo Boron" style="width: 200px;">
-            <ul>
-                <li class="hover_o">Acerca de</li>
-                <li class="hover_o">Proyectos</li>
-                <li class="hover_o">Repositorio</li>
-                <li class="hover_o">Novedades</li>
-                <li class="hover_o">Contacto</li>
-                <li class="hover_o">En/<b>Es</b></li>
-                <li class="hover_o"><i class="bi bi-search"></i></li>
-            </ul>
+    <header class="container-fluid">
+        <nav class="navbar d-none d-lg-flex row flex-row" id="nav_1">
+            <div class="col-2 d-flex align-items-center justify-content-start">
+                <img src="resources/logo_boron.png" alt="Logo Boron" style="width: 200px;">
+            </div>
+            <div class="col-10 " style="overflow: hidden;">
+                <ul class="d-flex justify-content-end align-items-center text_very_small">
+                    <li class="hover_o">Acerca de</li>
+                    <li class="hover_o">Proyectos</li>
+                    <li class="hover_o">Repositorio</li>
+                    <li class="hover_o">Novedades</li>
+                    <li class="hover_o">Contacto</li>
+                    <li class="hover_o">En/<b>Es</b></li>
+                    <li class="hover_o"><i class="bi bi-search"></i></li>
+                </ul>
+            </div>
         </nav>
-        <nav class="d-none" id="nav_2" style="z-index: 200;">
-            <div class="container header_2 p-3" style="z-index: 200;">
+        <nav class="d-flex d-lg-none" id="nav_2">
+            <div class="container-fluid header_2 p-3" style="z-index: 200;">
                 <div class="row w-100">
-                    <div class="col-6">
-                        <img src="resources/icon_B.png" alt="Icono Boron B" style="height: 50px;">
+                    <div class="col-6" >
+                        <img src="resources/icon_B.png" alt="Icono Boron B" style="height: 50px; z-index: 100; position: relative;" id="logo_img">
                     </div>
-                    <div class="col-6 d-flex justify-content-end hover_o" onclick="desplegar()">
+                    <div class="col-6 d-flex justify-content-end hover_o position-relative" onclick="desplegar()">
                         <div class="btn_header_2 d-flex align-items-center px-3 gap-2" id="content_btn">
-                            <span>Menu</span><i class="bi bi-filter-left text_mid"></i>
+                            <span>Menu</span><i class="bi bi-filter-left text_little"></i>
                         </div>
                     </div>
                 </div> 
             </div>
             <div class="d-none" id="nav_content">
-                <div class="nav2"> 
+                <div class="nav2" style="z-index: 100;"> 
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
-                                <ul class="d-flex flex-column text-white list_header_2 text_mid justify-content-end h-100">
+                                <ul class="d-flex flex-column text-white list_header_2 text_little justify-content-end h-100">
                                     <li class="hover_o">Acerca de</li>
                                     <li class="hover_o">Proyectos</li>
                                     <li class="hover_o">Repositorio</li>
@@ -57,7 +61,7 @@
                                 </ul>
                             </div>
                             <div class="col-6">
-                                <ul class="d-flex flex-column text-white list_header_2 text_mid justify-content-end h-100">
+                                <ul class="d-flex flex-column text-white list_header_2 text_little justify-content-end h-100">
                                     <li class="hover_o">En /<b> Es</b></li>
                                 </ul>
                             </div>
@@ -128,44 +132,56 @@
                 <p class="text_big">Somos una organización autónoma que busca resolver desafíos relacionados con el aprendizaje y la mediación de las tecnologías, a través de metodologías innovadoras y un abordaje práctico, social y participativo.</p>
             </div>
         </div>
+        <!-- Seccion cuadrado e imagen-->
         <div class="container">
             <div class="row d-flex flex-column flex-sm-column flex-md-row" style="background-color:#77D7DB">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" style="padding: 5%;">
                     <div>
-                        <span class="title"><b>Nuestro Enfoque</b></span>
+                        <span class="text_little"><b>Nuestro Enfoque</b></span>
                     </div>
-                    <div class="h-100 d-flex align-items-end">
-                        <b>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores  nacionales e internacionales.</b>    
+                    <div class="h-100 d-flex align-items-end text_little">
+                        Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores  nacionales e internacionales.   
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0">
                     <img src="resources/woman_1.jpg" alt="Imagen Woman" class="img_feature_1">
                 </div>
             </div>
         </div>
+        <!-- Seccion twitter-->
         <div class="container">
             <div class="row flex-row-reverse" style="background-color: #1DA1F2;">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-5">
-                    <div class="d-flex flex-column h-50">
-                        <span class="title"><b>Seguinos en Twitter</b></span>
-                        <br>
-                        <i class="bi bi-twitter text-white text_mid"></i>
-                        <span class="text_big"><b>Boronstudio</b></span>
-                        <span class=" text-white">@Boronstudio</span>
-                        <br>
-                        <span> <b><i>2 hs</i></b> </span>
-                        <p class="" style="font-size: 1.5rem;">📌<span class="text-white ">#OportunidadLaboral</span> Llamado abierto para sumarse al equipo de <span class="text-white">@Boronstudio</span> master digital.👩‍💻👨‍💻<br> Más información 👉<span class="text-white">https://bit.ly/2OobIHS</span></p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-5">
+                    <div id="tweet">
+                        <div class="d-flex flex-column h-50">
+                            <span class=""><b>Seguinos en Twitter</b></span>
+                            <br>
+                            <i class="bi bi-twitter text-white text_mid"></i>
+                            <span class="text_big"><b>Boronstudio</b></span>
+                            <span class=" text-white">@Boronstudio</span>
+                            <br>
+                            <span> <b><i>2 hs</i></b> </span>
+                            <p class="" style="font-size: 1.5rem;">📌<span class="text-white ">#OportunidadLaboral</span> Llamado abierto para sumarse al equipo de <span class="text-white">@Boronstudio</span> master digital.👩‍💻👨‍💻<br> Más información 👉<span class="text-white">https://bit.ly/2OobIHS</span></p>
+                        </div>
                     </div>
-                    <div class="row text_mid h-50 d-flex align-items-end">
-                        <div class="col d-flex"><i class="bi bi-arrow-left hover_circle  p-3 py-2"></i></div>
-                        <div class="col d-flex justify-content-end "><i class="bi bi-arrow-right hover_circle  p-3 py-2"></i></div>
+                    <div class="d-none d-md-flex row text_mid align-items-end">
+                        <div class="col d-flex"><i class="bi bi-arrow-left hover_circle p-3 py-2" onclick="cambiarTweetArrow(`izquierda`)"></i></div>
+                        <div class="col d-flex justify-content-end "><i class="bi bi-arrow-right hover_circle p-3 py-2" onclick="cambiarTweetArrow(`derecha`)"></i></div>
+                    </div>
+                    <div class="d-flex d-md-none row text_very_small align-items-end">
+                        <div class="col d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-circle-fill text-white hover_o" onclick="changeIcono_circulo(`t1`,`t2`,`t3`)" id="t1"></i>
+                            <i class="bi bi-circle-fill hover_o" onclick="changeIcono_circulo(`t2`,`t1`,`t3`)" id="t2"></i>
+                            <i class="bi bi-circle-fill hover_o" onclick="changeIcono_circulo(`t3`,`t1`,`t2`)" id="t3"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0">
-                    <img src="resources/woman_2.png" alt="Imagen Woman" class="img_feature_1">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0">
+                    <img src="resources/woman_2.png" alt="Imagen Woman" class="img_feature_1 h-100">
                 </div>
             </div>
         </div>
+        <!-- Seccion Repositorio-->
         <div class="container py-4 p-md-5">
             <div class="row d-flex px-5 flex-column flex-md-row">
                 <div class="col d-flex justify-content-center justify-content-md-start align-items-center text_big"><b>Repositorio</b></div>
@@ -197,6 +213,7 @@
             </div>
             <hr>
         </div>
+        <!-- Seccion Novedades -->
         <div class="container">
             <div class="row"><span class="text_very_big text-center"><b>Novedades</b></span></div>
             <div class="row">
@@ -280,6 +297,7 @@
                 </div>
             </div>
         </div>
+        <!-- Seccion Footer-->
         <footer class="container bg-black">
             <div class="container_img_logo position-relative w-100 h-100">
                 <img src="resources/logo_boron_inverse.JPG" alt="Logo Boron" class="img_footer">

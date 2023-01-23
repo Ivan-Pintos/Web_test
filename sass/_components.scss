@@ -7,14 +7,11 @@
     display: flex;
     justify-content: space-between;
     & ul {
-        margin-right: 4rem;
-        display: flex;
         gap: 3rem;
         & li{
             list-style: none;
             color: black;
             font-weight: 400px;
-            font-size: 18px;
             display: inline-block;
             line-height: 25px;
         }
@@ -45,11 +42,10 @@
 .nav2{
     position: fixed;
     right: 0;
-    width: 50vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     color: white;
-    z-index: 150;
 }
 .btn_header_2{
     background-color: black;
@@ -161,6 +157,13 @@ font-size: 2rem;
     }
     .text_mid{
         font-size: 3rem;
+    }
+    .text_very_small{
+        font-size: 1rem;
+    }
+    .nav2{
+        width: 50vw;
+        height: 80vh;
     }
 }
 
