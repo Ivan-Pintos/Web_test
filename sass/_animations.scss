@@ -18,6 +18,31 @@
     font-size: 1rem;
     overflow: hidden;
 }
+.animation_width_max .nav2{
+    animation: forwards linear 0.75s animation_with;
+}
+.animation_width_max .nav2 .container{
+    animation: forwards linear 1s animation_opacity;
+}
+@keyframes animation_with {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes animation_opacity {
+    0%{
+        opacity: 0%;
+    }
+    80%{
+        opacity: 0;   
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 @keyframes animation_move_right {
     0%{
         left: 0;
@@ -64,6 +89,14 @@
         }
         100%{
             left: 100% ; transform:  translateX(-900px);
+        }
+    }
+    @keyframes animation_with {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 50vw;
         }
     }
 }

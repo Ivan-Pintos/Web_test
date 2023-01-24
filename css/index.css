@@ -24,6 +24,33 @@
   overflow: hidden;
 }
 
+.animation_width_max .nav2 {
+  animation: forwards linear 0.75s animation_with;
+}
+
+.animation_width_max .nav2 .container {
+  animation: forwards linear 1s animation_opacity;
+}
+
+@keyframes animation_with {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes animation_opacity {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes animation_move_right {
   0% {
     left: 0;
@@ -72,6 +99,14 @@
     100% {
       left: 100%;
       transform: translateX(-900px);
+    }
+  }
+  @keyframes animation_with {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50vw;
     }
   }
 }
@@ -131,10 +166,12 @@
 .nav2 {
   position: fixed;
   right: 0;
-  width: 100vw;
+  width: 0;
   height: 100vh;
   background-color: black;
   color: white;
+  overflow: hidden;
+  transition: width 0.5s;
 }
 
 .btn_header_2 {
@@ -224,7 +261,7 @@ input[type=checkbox].form-check-input:checked {
 }
 
 .text_very_big {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 @media (min-width: 576px) {
@@ -251,6 +288,10 @@ input[type=checkbox].form-check-input:checked {
   .text_mid {
     font-size: 2.5rem;
   }
+  .hover_o_responsive:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
 }
 @media (min-width: 992px) {
   .text_very_big {
@@ -266,7 +307,6 @@ input[type=checkbox].form-check-input:checked {
     font-size: 1rem;
   }
   .nav2 {
-    width: 50vw;
     height: 80vh;
   }
 }
@@ -286,6 +326,10 @@ input[type=checkbox].form-check-input:checked {
     font-size: 4.5rem;
   }
 }
+.hover_o_responsive:hover {
+  cursor: pointer;
+}
+
 .hover_o:hover {
   opacity: 50%;
   cursor: pointer;
@@ -368,6 +412,33 @@ input[type=checkbox].form-check-input:checked {
   overflow: hidden;
 }
 
+.animation_width_max .nav2 {
+  animation: forwards linear 0.75s animation_with;
+}
+
+.animation_width_max .nav2 .container {
+  animation: forwards linear 1s animation_opacity;
+}
+
+@keyframes animation_with {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes animation_opacity {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes animation_move_right {
   0% {
     left: 0;
@@ -416,6 +487,14 @@ input[type=checkbox].form-check-input:checked {
     100% {
       left: 100%;
       transform: translateX(-900px);
+    }
+  }
+  @keyframes animation_with {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50vw;
     }
   }
 }

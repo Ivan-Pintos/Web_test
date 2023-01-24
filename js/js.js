@@ -7,7 +7,7 @@ function Changeheader(){
 var truestate = true;
 function desplegar(){
     var navContent = document.getElementById("nav_content");
-    navContent.classList.toggle("d-none") 
+    navContent.classList.toggle("animation_width_max") 
     var boton = document.getElementById("content_btn")
     var logo = document.getElementById("logo_img")
     logo.classList.toggle("d-none")
