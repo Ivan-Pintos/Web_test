@@ -4,6 +4,8 @@ function Changeheader(){
     var header_2 = document.getElementById("nav_2");
     header_2.classList.toggle("d-lg-none")
 }
+// Esta variable controla el texto que tiene el boton al mnomento que es pulsado
+// Si esta en true signifca que el texto actual es Menu si es false el texto es Cerrar
 var truestate = true;
 function desplegar(){
     var navContent = document.getElementById("nav_content");
@@ -11,6 +13,7 @@ function desplegar(){
     var boton = document.getElementById("content_btn")
     var logo = document.getElementById("logo_img")
     logo.classList.toggle("d-none")
+    //Intercambia el texto del boton
     if(truestate === true){
         boton.innerHTML = `<span>Cerrar</span><i class="bi bi-x-lg text_little"></i>`
         truestate = false;
@@ -66,7 +69,9 @@ function cambiarTweetArrow(direction){
     }
     
 }
+// Esta funcion toma 3 valores la id del elemento pulsado y las id de los otros dos elementos
 function changeIcono_circulo(id_elemento_pulsado, id_otro_elemento , id_otro_elemento2){
+    // cambia el color de los circulos, el presionado a blanco, y los demas en negro
     var elemento_1 = document.getElementById(id_elemento_pulsado);
     if(elemento_1.classList.contains("text-white") === false){
         elemento_1.classList.toggle("text-white");
@@ -80,6 +85,7 @@ function changeIcono_circulo(id_elemento_pulsado, id_otro_elemento , id_otro_ele
     if(elemento_3.classList.contains("text-white") === true){
         elemento_3.classList.toggle("text-white");
     }
+    //Llama a la funcion para cambiar el tweet que se muestra en la pagina con la id del circulo pulsado
     cambiarTweet(id_elemento_pulsado)
 }
 //Clase que cambia el contenido del tweet dependiendo del circulo blanco que este seleccionado

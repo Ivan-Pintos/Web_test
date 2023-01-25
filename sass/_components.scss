@@ -2,6 +2,9 @@
 *{
     font-family:'Open Sans';
 }
+.margin_top_nav{
+    margin-top: 5rem;
+}
 .navbar{
     padding: 1rem;
     display: flex;
@@ -169,6 +172,9 @@ font-size: 2rem;
     }
     .nav2{
         height: 80vh;
+    }
+    .margin_top_nav{
+        margin-top: 0rem;
     }
 }
 
